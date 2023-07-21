@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crack Code</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/action.js"></script>
+</head>
+
+<body>
+    <div class="App-header">
+        <div class="App-logo">
+            <img src="./assets/image/logo.png" alt="" class="logo">
+            <div class="card">
+                <div class="err-img">
+                    <img src="./assets/image/err_back.png" class="img-error" alt="">
+                    <img src="./assets/image/x.png" class="img-error-x" alt="">
+                </div>
+                <div class="text-error">
+                    Failed!
+                </div>
+                <div class="subt-success">
+                    You Didn't Crack The Code!
+                </div>
+                <div class="submit">
+                    <button class="submitbtn" onclick="errorComfirm()">Try Again</button>
+                </div>
+            </div>
+        </div>
+        <div id="mediaGuard">
+    
+        </div>
+    </div>
+    <script>
+        var audio = document.createElement("audio");
+        audio.controls = true;
+        audio.autoplay = true;
+        audio.style.visibility = 'hidden';
+        var source = document.createElement("source");
+        source.src = "./config/" + media_error;
+        source.type = "audio/mpeg";
+        audio.appendChild(source)
+        document.getElementById("mediaGuard").appendChild(audio)
+    </script>
+</body>
+
+</html>

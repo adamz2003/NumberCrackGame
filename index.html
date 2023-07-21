@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crack Code</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/action.js"></script>
+    <link href="./node_modules/electron-virtual-keyboard/virtual-keyboard.css" type="text/css" rel="stylesheet" />
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <link href="./node_modules/electron-virtual-keyboard/themes/mac.css" rel="stylesheet" /> -->
+</head>
+
+<body>
+    <div class="App-header">
+        <div class="App-logo">
+            <img src="./assets/image/logo.png" alt="" class="logo">
+            <div class="card">
+                <div class="title">Crack The Code</div>
+                <div class="code">
+                    <div class="codebtn" id="code1">_</div>
+                    <div class="codebtn" id="code2">_</div>
+                    <div class="codebtn" id="code3">_</div>
+                    <div class="codebtn" id="code4">_</div>
+                </div>
+                <div class="pinguard">
+                    <div class="row">
+                        <div class="numberbtn" onclick="inputcode('1')">1</div>
+                        <div class="numberbtn" onclick="inputcode('2')">2</div>
+                        <div class="numberbtn" onclick="inputcode('3')">3</div>
+                    </div>
+                    <div class="row">
+                        <div class="numberbtn" onclick="inputcode('4')">4</div>
+                        <div class="numberbtn" onclick="inputcode('5')">5</div>
+                        <div class="numberbtn" onclick="inputcode('6')">6</div>
+                    </div>
+                    <div class="row">
+                        <div class="numberbtn" onclick="inputcode('7')">7</div>
+                        <div class="numberbtn" onclick="inputcode('8')">8</div>
+                        <div class="numberbtn" onclick="inputcode('9')">9</div>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button class="submitbtn" onclick="submitaction()">Enter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mediaGuard">
+
+    </div>
+    <div id="vkboard"></div>
+    <script src="./renderer.js"></script>
+</body>
+
+</html>

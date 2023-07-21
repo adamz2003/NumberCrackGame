@@ -1,0 +1,23 @@
+{
+  "name": "crackcode",
+  "version": "1.0.0",
+  "description": "this is built with electron",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^24.3.1",
+    "electron-builder": "^23.6.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "electron-reloader": "^1.2.3"
+  },
+  "dependencies": {
+    "electron-virtual-keyboard": "^1.0.7",
+    "jquery": "^3.7.0",
+    "virtual-keyboard": "^1.30.4"
+  }
+}
